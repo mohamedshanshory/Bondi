@@ -1,0 +1,215 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --yello-color: #ffc400;
+    --red-color: #ff3150;
+    --section-color: #eff7fa;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    
+}
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yello-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover{
+    color: var(--yello-color);
+    background-color: #198754;
+    border-color:#198754;
+}
+
+.main-title::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* start navbar */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+    font-size: 13px;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: white;
+    border: 1px solid white;
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+.navbar .search{
+    
+    font-size: 14px;
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search svg{
+    color: var(--green-color);
+}
+.navbar .collapse .btn{
+    font-size: 13px;
+    color: var(--yello-color);
+}
+/* end navbar */
+/* start landing */
+.landing{
+    background-color: var(--dark-color);
+    height: calc(100vh - 70px);
+}
+/* end landing */
+/* start feartures */
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    color: var(--section-color);
+    font-size: 12rem;
+}
+.features .icon-holder .icon{
+    color: var(--green-color);
+}
+.features .feat h4{
+    color: var(--yello-color);
+}
+/* end feartures */
+/* start work */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul .active{
+    background-color: var(--red-color);
+    color: var(--yello-color);
+}
+.our-work ul li{
+    padding:0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+/* end work */
+/* start stuff */
+.stuff .description{
+    max-width: 500px;
+}
+/* end stuff */
+/* satrt our-team */
+.team{
+    background-color: var(--section-color);
+}
+.team .box h4{
+    background-color: var(--green-color);
+}
+/* end our-team */
+/* start project */
+.project{
+    background-color: var(--dark-color);
+}
+/* end project */
+/* start subscribe */
+.subscribe{
+    background-color: var(--yello-color);
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus{
+    outline: none;
+}
+.subscribe input::placeholder{
+    color: white;
+}
+/* end subscribe */
+/* start footer */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .info p{
+    font-size: 13px;
+}
+.footer .copyright{
+    font-size: 12px;
+}
+.footer .copyright > span{
+    color: var(--green-color);
+}
+.footer .copyright div span {
+    color: var(--yello-color);
+}
+.footer .links{
+    font-size: 14px;
+}
+.footer .about{
+    font-size: 14px;
+}
+.footer .contact p{
+    font-size: 13px;
+}
+.footer .contact .email{
+    font-size: 12px;
+}
+
+.footer .content ul svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .twitter{
+    background-color: #14171a;
+}
+.footer .linkedin{
+    background-color: #0a66c2;
+}
+.footer .github{
+    background-color: #333;
+}
+/* end footer */
